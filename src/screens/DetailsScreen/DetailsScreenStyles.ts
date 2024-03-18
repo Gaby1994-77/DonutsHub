@@ -1,0 +1,166 @@
+import {StyleSheet, Dimensions} from 'react-native';
+
+const {width} = Dimensions.get('window');
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 10,
+    paddingBottom: 75,
+  },
+  customNavBar: {
+    position: 'absolute',
+    bottom: 10,
+    left: width / 2 - 150,
+    height: 60,
+    width: 100,
+    backgroundColor: 'rgba(128, 128, 128, 0.6)',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    paddingVertical: 1,
+    borderTopWidth: 1,
+    borderTopColor: '#ccc',
+    borderRadius: 30,
+    shadowColor: '#100',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.5,
+    shadowRadius: 3.84,
+    elevation: 20,
+    marginLeft: 105,
+  },
+  card: {
+    backgroundColor: 'white',
+    borderRadius: 8,
+    paddingVertical: 25,
+    paddingHorizontal: 20,
+    margin: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.5,
+    shadowRadius: 2.22,
+    elevation: 5,
+  },
+  image: {
+    width: '100%',
+    height: 220,
+    borderRadius: 8,
+  },
+  textContent: {
+    marginTop: 12,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  description: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 6,
+  },
+  priceBadge: {
+    position: 'absolute',
+    top: 8,
+    right: 8,
+    backgroundColor: 'red',
+    borderRadius: 5,
+    padding: 5,
+    width: 60,
+    height: 35,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  priceText: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  quantityBadge: {
+    position: 'absolute',
+    bottom: 10,
+    right: 30,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'lightgrey',
+    borderRadius: 10,
+  },
+  quantityButton: {
+    padding: 5,
+    width: 25,
+    height: 35,
+    marginBottom: 10,
+    marginTop: 2,
+  },
+  quantityButtonText: {
+    color: '#000',
+    fontSize: 22,
+  },
+  quantityText: {
+    marginHorizontal: 15,
+    fontSize: 18,
+  },
+
+  cartBadge: {
+    position: 'absolute',
+    right: -10,
+    top: -3,
+    backgroundColor: 'red',
+    borderRadius: 10,
+    minWidth: 20,
+    height: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cartBadgeText: {
+    color: 'white',
+    fontSize: 12,
+    fontWeight: 'bold',
+  },
+  button: {
+    backgroundColor: 'rgba(128, 128, 128, 0.6)',
+    borderRadius: 15,
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    marginHorizontal: 5,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 18,
+    marginLeft: 5,
+  },
+  badge: {
+    position: 'absolute',
+    top: -5,
+    right: -5,
+    backgroundColor: 'red',
+    borderRadius: 10,
+    width: 20,
+    height: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  badgeText: {
+    color: 'white',
+    fontSize: 12,
+    fontWeight: 'bold',
+  },
+  deleteButton: {
+    backgroundColor: 'red',
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 10,
+    alignItems: 'center',
+  },
+  cardContent: {
+    flex: 1,
+    marginLeft: 10,
+  },
+  deleteButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+});
+
+export default styles;
